@@ -8,44 +8,44 @@ const person: Person = {
   role: "Frontend/UI Developer",
   avatar: "/images/avatar.jpg",
   email: "nekkalapu.ramya7@gmail.com",
-  location: "Europe/Vienna", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Telugu", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
-const newsletter: Newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
-};
+// const newsletter: Newsletter = {
+//   display: true,
+//   title: <>Subscribe to {person.firstName}'s Newsletter</>,
+//   description: <>My weekly newsletter about creativity and engineering</>,
+// };
 
 const social: Social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   // Set essentials: true for links you want to show on the about page
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system",
-    essential: true,
-  },
+  // {
+  //   name: "GitHub",
+  //   icon: "github",
+  //   link: "https://github.com/once-ui-system",
+  //   essential: true,
+  // },
   {
     name: "LinkedIn",
     icon: "linkedin",
     link: "https://www.linkedin.com/in/ramyanekkalapu",
     essential: true,
   },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-    essential: true,
-  },
+  // {
+  //   name: "Instagram",
+  //   icon: "instagram",
+  //   link: "https://www.instagram.com/once_ui/",
+  //   essential: false,
+  // },
+  // {
+  //   name: "Threads",
+  //   icon: "threads",
+  //   link: "https://www.threads.com/@once_ui",
+  //   essential: true,
+  // },
   {
     name: "Email",
     icon: "email",
@@ -61,19 +61,19 @@ const home: Home = {
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Frontend Software Engineer - React | Angular | TypeScript | JavaScript</>,
-  featured: {
-    display: true,
-    title: (
-      <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
-      </Row>
-    ),
-    href: "/work/building-once-ui-a-customizable-design-system",
-  },
+  // featured: {
+  //   display: true,
+  //   title: (
+  //     <Row gap="12" vertical="center">
+  //       <strong className="ml-4">Once UI</strong>{" "}
+  //       <Line background="brand-alpha-strong" vert height="20" />
+  //       <Text marginRight="4" onBackground="brand-medium">
+  //         Featured work
+  //       </Text>
+  //     </Row>
+  //   ),
+  //   href: "/work/building-once-ui-a-customizable-design-system",
+  // },
   subline: (
     <>
     I'm Ramya, a frontend software engineer and I build accessible, modular UIs and ship production features with REST/GraphQL, performance tuning, and CI/CD releases.  
@@ -102,9 +102,10 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Hi, I'm Ramya Nekkalapu, an MS CS student (graduating May 2026) and a frontend engineer focused on
+        building modular, scalable and accessible UI solutions. My background includes building reusable UI components
+        in Angular/React, integrating REST/GraphQL APIs, and improving load time and reliability through performance optimizations, testing, 
+        and CI/CD.
       </>
     ),
   },
@@ -113,17 +114,49 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "DELOITTE USI",
+        timeframe: "Jun 2022 - Sep 2024",
+        role: "Software Engineer - Frontend",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Built 20+ Angular/TypeScript UI components (forms, tables, filters, modals) and standardized validation/error/loading patterns, 
+            cutting UI rework ~25% and improving sprint delivery speed through agile development. 
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Partnered with UX using Figma to translate 8+ prototypes into responsive, accessible screens 
+            (keyboard navigation/ARIA patterns), reducing design-to-dev cycle time ~20%. 
+          </>,
+           <>
+           Integrated Angular UI with 15+ REST/GraphQL endpoints using best practices from JavaScript frameworks, 
+          improving client-side state handling and error recovery, and reducing API-related UI defects ~30% post-release.  
+          </>,
+          <>
+           Developed/extended 15+ REST/GraphQL APIs supporting UI workflows; improved responsiveness by 
+          reducing payload size ~20% and tightening queries to prevent over-fetching
+          </>,
+          <>
+           Noticed a spike in UI errors on a high-traffic workflow, investigated 3 hypotheses 
+            (API regression, state bug, browser-specific issue), ruled out root causes using logs + reproducible steps, fixed an async state race condition, and reduced user-facing failures ~30%.   
+          </>,
+          <>
+           Identified a drop in page performance after a release, tested 3 hypotheses (large payloads, expensive rendering, redundant API calls), 
+            optimized rendering and reduced over-fetching, and improved page responsiveness ~20% while cutting repeated calls
+          </>,
+          <>
+          Implemented CI/CD checks in Azure DevOps / GitHub Actions (build + lint + unit tests + deploy gates), 
+            leveraging front-end modular builds to reduce release failures ~30% and improve deployment confidence.
+          </>,
+          <>
+          Strengthened quality with unit/integration/regression testing for critical UI/API flows, 
+            cutting escaped defects ~25% and improving sprint predictability.
+          </>,
+          <>
+           Led production triage for 40+ P1/P2 incidents by isolating root cause via logs/metrics, shipping fixes quickly, 
+            and documenting runbooks-reducing recurring incidents ~20%.
+          </>,
+          <>
+           Led onboarding for new team members, creating a quick-start guide (local setup, branching/PR checklist, testing workflow) 
+            and mentoring them through first deliverables to help them ramp faster.
           </>,
         ],
         images: [
@@ -137,17 +170,27 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "I&T Labs",
+        timeframe: "Jan 2021 - Aug 2021",
+        role: "Software Engineering Intern",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Built 20+ responsive web components using JavaScript (ES6+), HTML5, CSS3, and component libraries for a 
+            customer-facing portal; standardized reusable UI patterns across 4+ screens.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Implemented React dashboard components using JavaScript frameworks (Hooks: useState/useEffect) and 
+            applied accessibility basics (semantic HTML, ARIA labels, keyboard navigation). 
+          </>,
+          <>
+            Created 8+ REST APIs using Node.js to retrieve data from MongoDB; added validation + error handling to improve API reliability.
+          </>,
+          <>
+            Configured Jenkins CI/CD to automate build/test/deploy and added unit test execution as a quality gate; 
+            reduced release rework by  ~25% and improved modularity of builds.
+          </>,
+           <>
+            Troubleshot 25+ defects with log analysis and structured debugging; delivered fixes in ~1–2 days during QA cycles.
           </>,
         ],
         images: [],
@@ -159,12 +202,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Lewis University, Romeoville, IL",
+        description: <>MS in Computer Science (Concentration: Artificial Intelligence)</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "VR Siddhartha Engineering College, Vijayawada, India",
+        description: <>Bachelor of Technology, Information Technology</>,
       },
     ],
   },
@@ -173,59 +216,196 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Frontend",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Angular, React, TypeScript, JavaScript, HTML5, CSS3, Responsive UI, Component Libraries, Accessibility(a11y)</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Angular",
+            icon: "angular",
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "React",
+            icon: "react",
           },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
+          {
+            name: "TypeScript",
+            icon: "typescript",
+          },
           {
             name: "JavaScript",
             icon: "javascript",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
+            name: "HTML5",
+            icon: "html",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "CSS3",
+            icon: "css",
           },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
+        // images: [
+        //   {
+        //     src: "/images/projects/project-01/cover-02.jpg",
+        //     alt: "Project image",
+        //     width: 16,
+        //     height: 9,
+        //   },
+        //   {
+        //     src: "/images/projects/project-01/cover-03.jpg",
+        //     alt: "Project image",
+        //     width: 16,
+        //     height: 9,
+        //   },
+        // ],
+      },
+      {
+        title: "Backend/APIs",
+        description: (
+          <>Python, FastAPI, Node.js, REST, GraphQL</>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Python",
+            icon: "python",
           },
+          {
+            name: "FastAPI",
+            icon: "fastapi",
+          },
+          {
+            name: "Node.js",
+            icon: "nodejs",
+          },
+          {
+            name: "REST",
+            icon: "rest",
+          },
+          {
+            name: "GraphQL",
+            icon: "graphql",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        // images: [
+        //   {
+        //     src: "/images/projects/project-01/cover-04.jpg",
+        //     alt: "Project image",
+        //     width: 16,
+        //     height: 9,
+        //   },
+        // ],
+      },
+      {
+        title: "Cloud/DevOps",
+        description: (
+          <>AWS (EC2/S3/RDS), Docker, CI/CD (Azure DevOps, GitHub Actions, Jenkins)</>
+        ),
+        tags: [
+          {
+            name: "AWS",
+            icon: "aws",
+          },
+          {
+            name: "Docker",
+            icon: "docker",
+          },
+          {
+            name: "CI/CD",
+            icon: "cicd",
+          },
+        ],
+      },
+      {
+        title: "Databases",
+        description: (
+          <>SQL, MySQL, PostgreSQL, MongoDB, CosmosDB (exposure)</>
+        ),
+        tags: [
+          {
+            name: "SQL",
+            icon: "sql",
+          },
+          {
+            name: "MySQL",
+            icon: "mysql",
+          },
+          {
+            name: "PostgreSQL",
+            icon: "postgresql",
+          },
+          {
+            name: "MongoDB",
+            icon: "mongodb",
+          },
+          {
+            name: "CosmosDB",
+            icon: "cosmosdb",
+          },
+        ],
+      },
+      {
+        title: "Testing/Quality",
+        description: (
+          <>Unit Testing, Integration Testing, Regression Testing, API Testing (Postman), Debugging/RCA</>
+        ),
+        tags: [
+          {
+            name: "Unit Testing",
+            icon: "unittesting",
+          },
+          {
+            name: "Integration Testing",
+            icon: "integrationtesting",
+          },
+          {
+            name: "Regression Testing",
+            icon: "regressiontesting",
+          },
+          {
+            name: "API Testing",
+            icon: "postman",
+          },
+          {
+            name: "Debugging",
+            icon: "debugging",
+          },
+        ],
+      },
+      {
+        title: "Tools",
+        description: (
+          <>Git, Jira, Postman, Figma</>
+        ),
+        tags: [
+          {
+            name: "Git",
+            icon: "git",
+          },
+          {
+            name: "Jira",
+            icon: "jira",
+          },
+          {
+            name: "Postman",
+            icon: "postman",
+          },
+          {
+            name: "Figma",
+            icon: "figma",
+          },
+        ],
+      },
+      {
+        title: "Methodologies",
+        description: (
+          <>JavaScript Frameworks, Agile Development</>
+        ),
+        tags: [
+          
         ],
       },
     ],
