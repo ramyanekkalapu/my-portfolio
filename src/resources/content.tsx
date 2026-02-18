@@ -61,19 +61,19 @@ const home: Home = {
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Frontend Software Engineer - React | Angular | TypeScript | JavaScript</>,
-  // featured: {
-  //   display: true,
-  //   title: (
-  //     <Row gap="12" vertical="center">
-  //       <strong className="ml-4">Once UI</strong>{" "}
-  //       <Line background="brand-alpha-strong" vert height="20" />
-  //       <Text marginRight="4" onBackground="brand-medium">
-  //         Featured work
-  //       </Text>
-  //     </Row>
-  //   ),
-  //   href: "/work/building-once-ui-a-customizable-design-system",
-  // },
+  featured: {
+    display: true,
+    title: (
+      <Row gap="12" vertical="center">
+        <strong className="ml-4">Once UI</strong>{" "}
+        <Line background="brand-alpha-strong" vert height="20" />
+        <Text marginRight="4" onBackground="brand-medium">
+          Featured work
+        </Text>
+      </Row>
+    ),
+    href: "/work/building-once-ui-a-customizable-design-system",
+  },
   subline: (
     <>
     I'm Ramya, a frontend software engineer and I build accessible, modular UIs and ship production features with REST/GraphQL, performance tuning, and CI/CD releases.  
