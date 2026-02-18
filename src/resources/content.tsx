@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Ramya",
+  lastName: "Nekkalapu",
+  name: `Ramya Nekkalapu`,
+  role: "Frontend/UI Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "nekkalapu.ramya7@gmail.com",
+  location: "Mount Prospect, IL", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Telugu", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -31,7 +31,7 @@ const social: Social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/ramyanekkalapu",
     essential: true,
   },
   {
@@ -49,7 +49,7 @@ const social: Social = [
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: `mailto:${nekkalapu.ramya7@gmail.com}`,
     essential: true,
   },
 ];
