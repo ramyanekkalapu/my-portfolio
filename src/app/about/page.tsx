@@ -62,7 +62,7 @@ export default function About() {
         author={{
           name: person.name,
           url: `${baseURL}${about.path}`,
-          // image: `${baseURL}${person.avatar}`,
+          image: `${baseURL}${person.avatar}`,
         }}
       />
       {about.tableOfContent.display && (
@@ -93,7 +93,7 @@ export default function About() {
             flex={3}
             horizontal="center"
           >
-            <Avatar src={} size="xl" />
+            <Avatar src="" size="xl" />
             <Row gap="8" vertical="center">
               <Icon onBackground="accent-weak" name="globe" />
               {person.location}
