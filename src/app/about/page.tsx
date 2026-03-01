@@ -109,7 +109,7 @@ export default function About() {
             )}
           </Column>
         )}
-        {/* <Column className={styles.blockAlign} flex={9} maxWidth={40}>
+        { <Column className={styles.blockAlign} flex={9} maxWidth={40}>
           <Column
             id={about.intro.title}
             fillWidth
@@ -194,7 +194,7 @@ export default function About() {
                 )}
               </Row>
             )}
-          </Column> }*/
+          </Column> }
 
           {about.intro.display && (
             <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl">
