@@ -194,7 +194,7 @@ export default function About() {
                 )}
               </Row>
             )}
-          </Column> }
+          </Column> 
 
           {about.intro.display && (
             <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl">
