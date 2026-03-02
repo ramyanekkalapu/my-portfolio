@@ -76,7 +76,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Ramya, a frontend software engineer and I build accessible, modular UIs and ship production features with REST/GraphQL, performance tuning, and CI/CD releases.  
+    Hi, I'm Ramya, a frontend software engineer and I build accessible, modular UIs and ship production features with REST/GraphQL, performance tuning, and CI/CD releases.  
 </>
   ),
 };
@@ -91,7 +91,7 @@ const about: About = {
     subItems: false,
   },
   avatar: {
-    display: true,
+    display: false,
   },
   calendar: {
     display: true,
@@ -203,11 +203,11 @@ const about: About = {
     institutions: [
       {
         name: "Lewis University, Romeoville, IL",
-        description: <>MS in Computer Science (Concentration: Artificial Intelligence)</>,
+        description: <>MS in Computer Science (Concentration: Artificial Intelligence) | GPA: 3.92/4.00</>,
       },
       {
         name: "VR Siddhartha Engineering College, Vijayawada, India",
-        description: <>Bachelor of Technology, Information Technology</>,
+        description: <>Bachelor of Technology, Information Technology | GPA: 9.12/10.00</>,
       },
     ],
   },
@@ -220,32 +220,32 @@ const about: About = {
         description: (
           <>Angular, React, TypeScript, JavaScript, HTML5, CSS3, Responsive UI, Component Libraries, Accessibility(a11y)</>
         ),
-        tags: [
-          {
-            name: "Angular",
-            icon: "angular",
-          },
-          {
-            name: "React",
-            icon: "react",
-          },
-          {
-            name: "TypeScript",
-            icon: "typescript",
-          },
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "HTML5",
-            icon: "html",
-          },
-          {
-            name: "CSS3",
-            icon: "css",
-          },
-        ],
+        // tags: [
+        //   {
+        //     name: "Angular",
+        //     icon: "angular",
+        //   },
+        //   {
+        //     name: "React",
+        //     icon: "react",
+        //   },
+        //   {
+        //     name: "TypeScript",
+        //     icon: "typescript",
+        //   },
+        //   {
+        //     name: "JavaScript",
+        //     icon: "javascript",
+        //   },
+        //   {
+        //     name: "HTML5",
+        //     icon: "html",
+        //   },
+        //   {
+        //     name: "CSS3",
+        //     icon: "css",
+        //   },
+        // ],
         // optional: leave the array empty if you don't want to display images
         // images: [
         //   {
@@ -267,28 +267,28 @@ const about: About = {
         description: (
           <>Python, FastAPI, Node.js, REST, GraphQL</>
         ),
-        tags: [
-          {
-            name: "Python",
-            icon: "python",
-          },
-          {
-            name: "FastAPI",
-            icon: "fastapi",
-          },
-          {
-            name: "Node.js",
-            icon: "nodejs",
-          },
-          {
-            name: "REST",
-            icon: "rest",
-          },
-          {
-            name: "GraphQL",
-            icon: "graphql",
-          },
-        ],
+        // tags: [
+        //   {
+        //     name: "Python",
+        //     icon: "python",
+        //   },
+        //   {
+        //     name: "FastAPI",
+        //     icon: "fastapi",
+        //   },
+        //   {
+        //     name: "Node.js",
+        //     icon: "nodejs",
+        //   },
+        //   {
+        //     name: "REST",
+        //     icon: "rest",
+        //   },
+        //   {
+        //     name: "GraphQL",
+        //     icon: "graphql",
+        //   },
+        // ],
         // optional: leave the array empty if you don't want to display images
         // images: [
         //   {
@@ -304,100 +304,100 @@ const about: About = {
         description: (
           <>AWS (EC2/S3/RDS), Docker, CI/CD (Azure DevOps, GitHub Actions, Jenkins)</>
         ),
-        tags: [
-          {
-            name: "AWS",
-            icon: "aws",
-          },
-          {
-            name: "Docker",
-            icon: "docker",
-          },
-          {
-            name: "CI/CD",
-            icon: "cicd",
-          },
-        ],
+        // tags: [
+        //   {
+        //     name: "AWS",
+        //     icon: "aws",
+        //   },
+        //   {
+        //     name: "Docker",
+        //     icon: "docker",
+        //   },
+        //   {
+        //     name: "CI/CD",
+        //     icon: "cicd",
+        //   },
+        // ],
       },
       {
         title: "Databases",
         description: (
           <>SQL, MySQL, PostgreSQL, MongoDB, CosmosDB (exposure)</>
         ),
-        tags: [
-          {
-            name: "SQL",
-            icon: "sql",
-          },
-          {
-            name: "MySQL",
-            icon: "mysql",
-          },
-          {
-            name: "PostgreSQL",
-            icon: "postgresql",
-          },
-          {
-            name: "MongoDB",
-            icon: "mongodb",
-          },
-          {
-            name: "CosmosDB",
-            icon: "cosmosdb",
-          },
-        ],
+        // tags: [
+        //   {
+        //     name: "SQL",
+        //     icon: "sql",
+        //   },
+        //   {
+        //     name: "MySQL",
+        //     icon: "mysql",
+        //   },
+        //   {
+        //     name: "PostgreSQL",
+        //     icon: "postgresql",
+        //   },
+        //   {
+        //     name: "MongoDB",
+        //     icon: "mongodb",
+        //   },
+        //   {
+        //     name: "CosmosDB",
+        //     icon: "cosmosdb",
+        //   },
+        // ],
       },
       {
         title: "Testing/Quality",
         description: (
           <>Unit Testing, Integration Testing, Regression Testing, API Testing (Postman), Debugging/RCA</>
         ),
-        tags: [
-          {
-            name: "Unit Testing",
-            icon: "unittesting",
-          },
-          {
-            name: "Integration Testing",
-            icon: "integrationtesting",
-          },
-          {
-            name: "Regression Testing",
-            icon: "regressiontesting",
-          },
-          {
-            name: "API Testing",
-            icon: "postman",
-          },
-          {
-            name: "Debugging",
-            icon: "debugging",
-          },
-        ],
+        // tags: [
+        //   {
+        //     name: "Unit Testing",
+        //     icon: "unittesting",
+        //   },
+        //   {
+        //     name: "Integration Testing",
+        //     icon: "integrationtesting",
+        //   },
+        //   {
+        //     name: "Regression Testing",
+        //     icon: "regressiontesting",
+        //   },
+        //   {
+        //     name: "API Testing",
+        //     icon: "postman",
+        //   },
+        //   {
+        //     name: "Debugging",
+        //     icon: "debugging",
+        //   },
+        // ],
       },
       {
         title: "Tools",
         description: (
           <>Git, Jira, Postman, Figma</>
         ),
-        tags: [
-          {
-            name: "Git",
-            icon: "git",
-          },
-          {
-            name: "Jira",
-            icon: "jira",
-          },
-          {
-            name: "Postman",
-            icon: "postman",
-          },
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
+        // tags: [
+        //   {
+        //     name: "Git",
+        //     icon: "git",
+        //   },
+        //   {
+        //     name: "Jira",
+        //     icon: "jira",
+        //   },
+        //   {
+        //     name: "Postman",
+        //     icon: "postman",
+        //   },
+        //   {
+        //     name: "Figma",
+        //     icon: "figma",
+        //   },
+        // ],
       },
       {
         title: "Methodologies",
