@@ -101,14 +101,13 @@ const about: About = {
   intro: {
     display: true,
     title: "Introduction",
-    justify: "true",
     description: (
       <>
         Hi, I'm Ramya Nekkalapu, an MS Computer Science student (graduating May 2026) and a frontend engineer focused on
-        building modular, scalable and accessible applications. 
+        building modular, scalable and accessible applications. <br /><br />
         I have built UI applications using both React and Angular. Working across multiple frameworks has 
         helped me develop strong frontend engineering fundamentals, including component architecture, state management, 
-        accessibility, and performance optimization.
+        accessibility, and performance optimization. <br /><br />
         I enjoy collaborating with designers and backend engineers to deliver reliable, high-quality user experiences.
       </>
     ),
