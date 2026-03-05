@@ -101,6 +101,7 @@ const about: About = {
   intro: {
     display: true,
     title: "Introduction",
+    justify: "true",
     description: (
       <>
         Hi, I'm Ramya Nekkalapu, an MS Computer Science student (graduating May 2026) and a frontend engineer focused on
