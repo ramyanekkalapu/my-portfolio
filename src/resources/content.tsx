@@ -76,7 +76,8 @@ const home: Home = {
   },
   subline: (
     <>
-    Hi, I'm Ramya, a frontend software engineer and I build accessible, modular UIs and ship production features with REST/GraphQL, performance tuning, and CI/CD releases.  
+    Hi, I'm Ramya, a frontend engineer with experience building customer-facing web applications using React and Angular. 
+    I specialize in building accessible, modular UIs and ship production features with REST/GraphQL, performance tuning, and CI/CD releases.  
 </>
   ),
 };
@@ -102,10 +103,12 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Hi, I'm Ramya Nekkalapu, an MS CS student (graduating May 2026) and a frontend engineer focused on
-        building modular, scalable and accessible UI solutions. My background includes building reusable UI components
-        in Angular/React, integrating REST/GraphQL APIs, and improving load time and reliability through performance optimizations, testing, 
-        and CI/CD.
+        Hi, I'm Ramya Nekkalapu, an MS Computer Science student (graduating May 2026) and a frontend engineer focused on
+        building modular, scalable and accessible applications. 
+        I have built UI applications using both React and Angular. Working across multiple frameworks has 
+        helped me develop strong frontend engineering fundamentals, including component architecture, state management, 
+        accessibility, and performance optimization.
+        I enjoy collaborating with designers and backend engineers to deliver reliable, high-quality user experiences.
       </>
     ),
   },
