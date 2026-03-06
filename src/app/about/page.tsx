@@ -52,7 +52,7 @@ export default function About() {
     {
       title: about.certifications.title,
       display: about.certifications.display,
-      items: about.technical.certifications.map((certified) => certified.title),
+      items: about..certifications.map((certified) => certified.title),
     },
   ];
   return (
