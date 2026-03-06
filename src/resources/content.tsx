@@ -413,24 +413,6 @@ const about: About = {
       },
     ],
   },
-  certifications: {
-    display: true, // set to false to hide this section
-    title: "Certifications",
-    certified: [
-      {
-        name: "Azure Fundamentals (AZ900) - Microsoft Certified",
-      },
-      {
-        name: "Coursera (University of Michigan): Python Fundamentals",
-      },
-      {
-        name: "Cisco: Introduction to Networks; Cybersecurity Essentials",
-      },
-      {
-        name: "NPTEL: Design, Technology and Innovation",
-      },
-    ],
-  },
 };
 
 const blog: Blog = {
