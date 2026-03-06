@@ -122,20 +122,20 @@ const about: About = {
         role: "Software Engineer - Frontend",
         achievements: [
           <>
-            Built 20+ Angular/TypeScript UI components (forms, tables, filters, modals) and standardized validation/error/loading patterns, 
-            cutting UI rework ~25% and improving sprint delivery speed through agile development. 
+            Built and maintained 20+ reusable UI components across Angular and React applications, including forms, tables, filters, and 
+            modal workflows, reducing UI rework by ~25% and improving sprint delivery speed. 
           </>,
           <>
-            Partnered with UX using Figma to translate 8+ prototypes into responsive, accessible screens 
-            (keyboard navigation/ARIA patterns), reducing design-to-dev cycle time ~20%. 
+            Delivered responsive, accessible user interfaces from 8+ Figma designs, implementing semantic HTML, keyboard navigation, and 
+            ARIA patterns to reduce design-to-development cycle time by ~20%. 
           </>,
            <>
-           Integrated Angular UI with 15+ REST/GraphQL endpoints using best practices from JavaScript frameworks, 
-          improving client-side state handling and error recovery, and reducing API-related UI defects ~30% post-release.  
+           Integrated frontend applications with 15+ REST and GraphQL endpoints, improving client-side state handling, error recovery, and 
+             data consistency while reducing API-related UI defects by ~30% after release.  
           </>,
           <>
-           Developed/extended 15+ REST/GraphQL APIs supporting UI workflows; improved responsiveness by 
-          reducing payload size ~20% and tightening queries to prevent over-fetching
+           Contributed to both React- and Angular-based projects at Deloitte, adapting component patterns and state management approaches to 
+            match application architecture and product needs.
           </>,
           <>
            Noticed a spike in UI errors on a high-traffic workflow, investigated 3 hypotheses 
@@ -150,8 +150,8 @@ const about: About = {
             leveraging front-end modular builds to reduce release failures ~30% and improve deployment confidence.
           </>,
           <>
-          Strengthened quality with unit/integration/regression testing for critical UI/API flows, 
-            cutting escaped defects ~25% and improving sprint predictability.
+          Strengthened release reliability by implementing CI/CD quality gates in Azure DevOps and GitHub Actions, including build, lint, 
+            unit test, and deploy checks, reducing release failures by ~30%.
           </>,
           <>
            Led production triage for 40+ P1/P2 incidents by isolating root cause via logs/metrics, shipping fixes quickly, 
