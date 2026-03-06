@@ -1,5 +1,5 @@
 ---
-title: "Automating Design Handovers with a Figma to Code Pipeline"
+title: "Enterprise WorkFlow Manager"
 publishedAt: "2024-04-01"
 summary: "Explore the enduring debate between using spaces and tabs for code indentation, and why this choice matters more than you might think."
 images:
@@ -15,30 +15,50 @@ link: "https://once-ui.com/"
 
 ## Overview
 
-In this project, I focused on automating the often tedious design handover process. The goal was to create a pipeline that converts Figma designs directly into clean, production-ready code. By integrating design tokens, component libraries, and automated workflows, this solution significantly reduced the time spent on translating design assets into code, while maintaining design consistency across the product.
+Developed a workflow management interface designed to streamline task coordination across teams. The application enables users to create, assign, and track tasks while maintaining visibility into project progress.
+
+The focus of this project was building a modular Angular application that mirrors real enterprise UI systems.
 
 ## Key Features
 
-- **Figma Plugin Integration**: Developed a custom Figma plugin that extracts design tokens such as colors, typography, and spacing values, and exports them in a format compatible with our codebase.
-- **Code Generation**: Integrated an automated process that translates Figma components into React code using a combination of design tokens and pre-built component templates. This allowed developers to focus more on logic and less on repetitive UI coding.
-- **Continuous Sync**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
-- **Scalable Design System**: Leveraged a design system that remains the single source of truth for both designers and developers, making it easy to maintain consistency even as the product evolves.
+- **Role-based Dashboards**: Developed a custom Figma plugin that extracts design tokens such as colors, typography, and spacing values, and exports them in a format compatible with our codebase.
+- **Dynamic task boards**: Integrated an automated process that translates Figma components into React code using a combination of design tokens and pre-built component templates. This allowed developers to focus more on logic and less on repetitive UI coding.
+- **Reactive Forms**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
+- **Real-time workflow updates**: Leveraged a design system that remains the single source of truth for both designers and developers, making it easy to maintain consistency even as the product evolves.
+- **Maintainability**:
+- **Search & Pagination**:
 
 ## Technologies Used
 
-- **Figma API**: For extracting design tokens and component data directly from the Figma designs.
-- **React and Next.js**: For building the front-end codebase with clean, reusable components.
-- **Styled-Components**: For managing styles dynamically using design tokens.
-- **GitHub Actions**: For automating the pipeline and syncing design changes to the repository.
+- **Angular and TypeScript**
+- **RxJS**
+- **Angular Material**
+- **REST APIs**
+- **JWT Authentication**
+- **SCSS**
 
 ## Challenges and Learnings
 
-One of the biggest challenges was ensuring that the generated code was clean and maintainable. This involved setting up intelligent mapping between Figma components and React code structures, as well as managing edge cases like responsive design and conditional rendering. Additionally, the continuous synchronization required a robust error-handling system to prevent conflicts during development.
+A key challenge was managing complex asynchronous workflows while keeping the UI predictable and responsive.
+
+To handle this, I used RxJS streams to centralize state updates and avoid inconsistent UI states caused by multiple concurrent API requests. I also implemented shared services to manage data flow between components.
+
+This project helped deepen my understanding of:
+
+- Angular reactive programming patterns
+- scalable frontend architecture in enterprise environments
+- managing complex application state
 
 ## Outcome
 
-The automated Figma to code pipeline has streamlined the handoff process, cutting down design-to-development time by 40%. Designers now have more confidence that their designs will be accurately translated into code, and developers can focus on more complex logic and feature development. This project has proven the value of automation in bridging the gap between design and development.
+- Developed 20+ reusable UI components, improving development efficiency and maintainability
 
+- Reduced duplicated UI logic by ~30% through shared services and modular architecture
+
+- Improved API interaction reliability by implementing structured error handling and retry logic
+
+- Delivered a fully functional workflow UI capable of managing hundreds of tasks across multiple users
 ---
+
 
 This project demonstrates your ability to leverage automation and streamline workflows, which is highly relevant for design engineering portfolios focused on efficiency and innovation.
