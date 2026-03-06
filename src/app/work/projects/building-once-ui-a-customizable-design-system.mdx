@@ -1,5 +1,5 @@
 ---
-title: "Building Once UI, a Customizable Design System"
+title: "Real-Time Analytics Dashboard"
 publishedAt: "2024-04-08"
 summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
 images:
@@ -20,26 +20,41 @@ team:
 
 ## Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+- Built a real-time analytics dashboard that visualizes operational metrics and system health for high-traffic applications. The goal was to provide developers and product teams with a single interface to monitor performance, identify anomalies, and respond to issues faster.
+- The project focuses on building a responsive and data-intensive frontend using React and modern state management patterns.
 
 ## Key Features
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- **Real-time metrics streaming**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
+- **Interactive charts**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
+- **Filtering & Time range selection**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
+- **Dynamic Dashboards**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- **Optimized rendering**:
+- **Responsive UI**:
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+- **React**: For fast, server-rendered React applications.
+- **TypeScript**: For creating and managing design assets and prototypes.
+- **Chart.js**: For styling React components with a modular, themable approach.
+- **React Query for data synchronization**: For building an interactive, documented component library.
+- **Rest APIs**:
+- **Tailwind CSS**:
 
 ## Challenges and Learnings
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+One of the main challenges was handling high-frequency data updates without causing performance issues in the UI. Early versions of the dashboard re-rendered too frequently, resulting in noticeable lag during heavy metric streams.
 
-## Outcome
+To address this, I introduced memoized components and selective state updates, ensuring only the components receiving new data were re-rendered. I also optimized chart rendering by batching updates and limiting the refresh interval.
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+This project strengthened my understanding of:
+-performance optimization in React applications
+-managing real-time data streams
+-designing reusable visualization components
+
+## Outcomes
+
+-Reduced unnecessary component re-renders by ~40%, significantly improving UI responsiveness.
+-Built 10+ reusable visualization components used across multiple dashboard views.
+-Achieved smooth real-time updates with sub-second latency
+-Delivered a scalable dashboard architecture capable of handling thousands of metric updates per minute
